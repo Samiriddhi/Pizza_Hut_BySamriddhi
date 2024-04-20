@@ -1,0 +1,269 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trirong", serif;
+  background-color: rgb(39, 37, 37);
+  color: antiquewhite;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav li a,
+h2 {
+  float: left;
+}
+nav li i {
+  float: right;
+}
+nav .about {
+  margin-left: 500px;
+}
+
+li a,
+h2,
+i {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 8px;
+  font-size: ;
+}
+
+/*css for section 2 */
+
+.banner {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.banner h1 {
+  border-bottom: 5px solid red;
+}
+
+.bannertext {
+  position: absolute;
+  color: whitesmoke;
+  left: 10%;
+  top: 20%;
+  right: 50%;
+  bottom: 10px;
+  height: 50%;
+  width: 60%;
+  text-overflow: clip;
+  font-weight: bolder;
+
+  text-align: center;
+  font-size: 20px;
+  opacity: 90%;
+}
+
+.aboutus h1 {
+  border-bottom: 5px solid red;
+  width: 40%;
+  text-align: center;
+  margin-left: 400px;
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+}
+.about_us_text {
+  margin: 10px;
+  height: 40%;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-right: 10px;
+  margin-top: 100px;
+  border-top: 5px solid red;
+  font-size: 20px;
+}
+.about_us_pic {
+  width: 100%;
+  margin: 0px;
+  height: 10%;
+}
+.about_us_pic img {
+  width: 100%;
+  margin-right: 10px;
+}
+.menu {
+  padding: 10px;
+  margin: 10px 25px;
+}
+
+.menu h1 {
+  margin-left: 700px;
+  border-bottom: 5px solid red;
+  width: 100px;
+}
+
+.pizzaMenu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
+
+.pizzaMenu h4 {
+  color: yellow;
+  padding: 10px;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+}
+.item img {
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.text {
+  margin: 20px;
+  padding: 10px;
+}
+.carauselImg {
+  padding: 10px 20px;
+}
+
+.carousal {
+  max-width: 95%;
+  position: relative;
+  margin: auto;
+}
+.carousal h1,
+.Gallery h1,
+.findus h1 {
+  border-bottom: 5px solid red;
+  margin-left: 600px;
+  margin-right: 600px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.layout1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.layout2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.pizzaImageGallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.Findus {
+  display: flex;
+  flex-direction: row;
+}
+.itemText,
+.itemMap {
+  margin: 5px 15px;
+  padding: 0px 5px;
+}
+
+.location,
+.contact {
+  margin: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.orderPizza,.contactforPizza{
+  margin: 10px 50px;
+  
+}
+.orderPizza{
+  padding-right: 0px 300px 0px 600px;
+  margin-left: 200px;
+}
+
+.contactforPizza{
+  padding-left: 800px;
+}
